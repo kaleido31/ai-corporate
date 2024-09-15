@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0b0f30;
+    color: white;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: transparent;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px;
+    line-height: 50px
+    
+  }
+    nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+  }
+  .hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+  z-index: 1; /* Between the image and the text */
+}
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
+    background: linear-gradient(135deg, #1a1f4a, #0b0f30);
+    position: relative;
+    height: 400px;
+
+  }
+  .hero-content{
+    position: absolute;
+    z-index: 2;
+  }
+  .hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+  }
+  
+  .hero-content .btn-primary {
+    padding: 15px 30px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+  }
+  .hero-image img {
+    position: absolute;
+    display: flex;
+    right: 0;
+    bottom: 50px;
+    min-width: 600px;
+    max-height: 400px;
+    
+    /* height: 30px; */
+   
+  }
+  
+  .features {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+  }
+  
+  .feature-box {
+    text-align: center;
+    max-width: 300px;
+  }
+  
+  .feature-box h3 {
+    margin: 20px 0;
+    font-size: 1.5em;
+  }
+  
+  .feature-box p {
+    font-size: 1em;
+    color: #d9e1ff;
+  }
+  
+  .icon-matching::before {
+    content: "\1F50D";
+    font-size: 50px;
+  }
+  
+  .icon-tour::before {
+    content: "\1F4F9";
+    font-size: 50px;
+  }
+  
+  .icon-messaging::before {
+    content: "\1F4AC";
+    font-size: 50px;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #13172d;
+    color: #a0a5d1;
+    font-size: 0.9em;
+  }
+  
